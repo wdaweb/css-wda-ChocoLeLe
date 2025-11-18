@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .col {
+            padding: 1rem;
+        }
+
+        .c1 {
+            text-align: center;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .c1 {
+                position: relative;
+                text-align: center;
+                width: 80%;
+                margin: auto;
+            }
+
+            .c2 p,
+            .c3 p,
+            .c4 p,
+            .c5 p,
+            .c6 p,
+            .c7 p,
+            .c8 p {
+                display: none;
+            }
+
+            .c2,
+            .c3,
+            .c4,
+            .c5,
+            .c6,
+            .c7,
+            .c8 {
+                position: absolute;
+                width: 20%;
+                text-align: center;
+            }
+
+            .c2 {
+                top: 5%;
+                left: 0%;
+            }
+
+            .c3 {
+                top: 0%;
+                left: 25%;
+            }
+
+            .c4 {
+                top: 35%;
+                left: 5%;
+            }
+
+            .c5 {
+                top: 60%;
+                left: 20%;
+            }
+
+            .c6 {
+                top: 5%;
+                left: 65%;
+            }
+
+            .c7 {
+                top: 65%;
+                left: 70%;
+            }
+
+            .c8 {
+                top: 30%;
+                left: 80%;
+            }
+
+            .hr1,
+            .hr2,
+            .hr3,
+            .hr4,
+            .hr5,
+            .hr6,
+            .hr7 {
+                position: absolute;
+            }
+
+            .hr1 {
+                width: 375px;
+                top: 0%;
+                left: -45%;
+                transform: skewY(20deg);
+            }
+
+            .hr2 {
+                width: 90px;
+                top: 80%;
+                left: 190%;
+                transform: skewY(45deg);
+            }
+
+            .hr3 {
+                width: 285px;
+                top: 160%;
+                left: -25%;
+                transform: skewY(355deg);
+            }
+
+            .hr4 {
+                width: 110px;
+                top: 90%;
+                left: 145%;
+                transform: skewY(325deg);
+            }
+
+            .hr5 {
+                width: 235px;
+                top: 0%;
+                left: 200%;
+                transform: skewY(25deg);
+            }
+
+            .hr6 {
+                width: 160px;
+                top: 110%;
+                left: -30%;
+                transform: skewY(330deg);
+            }
+
+            .hr7 {
+                width: 350px;
+                top: -100%;
+                left: -45%;
+                transform: skewY(355deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col c1">
+                <img src="./images/wda.png">
+                <h1>泰山職訓局</h1>
+                <br>
+                <h2>從零開始的網頁設計課程</h2>
+                <p>轉職網頁開發人員&emsp;掌握就業必備職能<br>由淺入深學習技術&emsp;強化職場的競爭力</p>
+                <br>
+                <hr class="hr1">
+            </div>
+            <div class="col c2">
+                <img src="./images/html.png">
+                <h1>HTML</h1>
+                <p>超文本標記語言（英語：HyperText Markup Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。 HTML 是一種基礎技術，常與 CSS、JavaScript
+                    一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行 動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網頁。HTML 描述了一個網站
+                    的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。</p>
+                <br>
+                <hr class="hr2">
+            </div>
+            <div class="col c3">
+                <img src="./images/css.png">
+                <h1>CSS</h1>
+                <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件（如 HTML 文件或 XML
+                    應用）添加樣式（字型、間距和顏色等）的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下 一版的 CSS4
+                    仍在開發中。</p>
+                <br>
+                <hr class="hr3">
+            </div>
+            <div class="col c4">
+                <img src="./images/js.png">
+                <h1>JavaScript</h1>
+                <p>JavaScript，通常縮寫為 JS，是一種進階直譯語言的程式語言。JavaScript 是一門基於原型、函式先行的語言，是
+                    一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。</p>
+                <br>
+                <hr class="hr4">
+            </div>
+            <div class="col c5">
+                <img src="./images/jq.png">
+                <h1>jQuery</h1>
+                <p>jQuery 是一套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最高的 網站中，有 65%
+                    使用了jQuery，是目前最受歡迎的
+                    JavaScript 函式庫。</p>
+                <br>
+                <hr class="hr5">
+            </div>
+            <div class="col c6">
+                <img src="./images/bs.png">
+                <h1>Bootstrap</h1>
+                <p>Bootstrap 是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與 之對應的「後端」是在伺服器上面執行的程式碼）框架，包括
+                    HTML、CSS及JavaScript
+                    的框架，提供字體排印、 表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網頁和 Web 應用的開發更加容易。</p>
+                <br>
+                <hr class="hr6">
+            </div>
+            <div class="col c7">
+                <img src="./images/vue.png">
+                <h1>Vue.js</h1>
+                <p>Vue.js是一款JavaScript前端框架，旨在更好地組織與簡化Web開發。Vue所關注的核心是MVC模式中的視圖層，同時，它也能方便地取得資料更新，並通過組件內部特定的方法實現視圖與模型的互動。
+                </p>
+                <br>
+                <hr class="hr7">
+            </div>
+            <div class="col c8">
+                <img src="./images/sass.png">
+                <h1>SASS</h1>
+                <p>Sass 是一種 CSS 預處理器，可讓開發者使用變數、巢狀語法、混入（Mixins）和函式等功能來編寫更易於維護和高效的 CSS 程式碼。其編譯後會生成標準的 CSS，供瀏覽器使用。Sass
+                    主要有兩種語法風格：舊版的縮排語法（Sass）和較新的 SCSS 語法，後者與 CSS 語法相同，使用大括號分隔。 </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
